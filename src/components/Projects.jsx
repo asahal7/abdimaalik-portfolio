@@ -3,6 +3,9 @@ import React from "react";
 import horseRaceImg from "../assets/images/horse-race.jpg";
 import whacAMoleImg from "../assets/images/whacamole.jpg";
 import ticTacToeImg from "../assets/images/tictactoe.jpg";
+import weatherFlaskImg from "../assets/weatherflask.jpg";
+import pythonLoginImg from "../assets/login system.jpg";
+
 
 const projects = [
   {
@@ -26,7 +29,22 @@ const projects = [
     image: ticTacToeImg,
     github: "https://github.com/asahal7/TicTacToe",
   },
+  {
+    title: "Weather Flask API",
+    description:
+      "A RESTful Flask API built in Python that fetches real-time weather data from external APIs based on city or geographic coordinates. Includes structured JSON responses, error handling, and deployment-ready architecture. Great for integrating weather functionality into web or mobile apps.",
+    image: weatherFlaskImg, // Replace with your actual image import (e.g., import weatherFlaskImg from "../assets/weather-flask.png")
+    github: "https://github.com/asahal7/weather-flask-api",
+  },
+  {
+    title: "Python Login System",
+    description:
+      "A secure Python-based login system that handles user registration, authentication, and password hashing using bcrypt. Implements session management and form validation, following best security practices for web apps. Ideal as a backend foundation for user-based applications.",
+    image: pythonLoginImg, // Replace with your actual image import (e.g., import pythonLoginImg from "../assets/python-login.png")
+    github: "https://github.com/asahal7/python-login-system",
+  },
 ];
+
 
 const ProjectCard = ({ title, description, image, github }) => (
   <div className="w-60 rounded overflow-hidden shadow-lg m-4 bg-white">
