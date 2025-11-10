@@ -53,7 +53,7 @@ const Contact = () => {
 
       {/* Resume Download Button */}
       <a
-        href="/abdimaalik-portfolio/AbdimaalikSahalCV-v2.pdf?v=2"  
+        href={`${process.env.PUBLIC_URL}/AbdimaalikSahalCV-v2.pdf?v=2`}
         download
         className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
       >
@@ -64,6 +64,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
