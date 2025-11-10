@@ -3,8 +3,8 @@ import React from "react";
 import horseRaceImg from "../assets/images/horse-race.jpg";
 import whacAMoleImg from "../assets/images/whacamole.jpg";
 import ticTacToeImg from "../assets/images/tictactoe.jpg";
-import weatherFlaskImg from "../assets/weatherflask.jpg";
-import pythonLoginImg from "../assets/login system.jpg";
+import weatherFlaskImg from "../assets/images/weatherflask.jpg";
+import pythonLoginImg from "../assets/images/login-system.jpg";
 
 
 const projects = [
@@ -47,7 +47,8 @@ const projects = [
 
 
 const ProjectCard = ({ title, description, image, github }) => (
-  <div className="w-60 rounded overflow-hidden shadow-lg m-4 bg-white">
+  <div className="w-64 rounded overflow-hidden shadow-lg m-4 bg-white">
+
     <img
       src={image}
       alt={title}
@@ -73,7 +74,8 @@ const Projects = () => {
   return (
     <section id="projects" className="p-6 bg-gray-50">
       <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+
         {projects.map((proj) => (
           <ProjectCard key={proj.title} {...proj} />
         ))}
